@@ -1,0 +1,94 @@
+/* Additional styling for the redesigned front page */
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+.body-home {
+    background: url('img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.black-fill {
+    background: rgba(0, 0, 0, 0.7);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.navbar-brand img {
+    width: 100px;
+}
+.navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    color: #fff; /* Adjust color as needed */
+}
+.welcome-text {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-height: 80vh;
+}
+.welcome-text img {
+    width: 100px;
+}
+.welcome-text h4 {
+    color: #eee;
+    font-size: 3rem; /* Adjusted for better responsiveness */
+    font-family: 'Lobster', cursive;
+}
+.welcome-text p {
+    color: #111; /* Increased contrast */
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px; /* Slightly more padding */
+    border-radius: 8px; /* Smoother edges */
+}
+#about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about .card-1 {
+    max-width: 600px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+#about .card-1 h5 {
+    font-family: 'Lobster', cursive;
+    font-size: 1.8rem; /* Adjust for better scalability */
+}
+#contact {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact form {
+    max-width: 600px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+#contact form h3 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .welcome-text h4 {
+        font-size: 2rem;
+    }
+    .welcome-text p {
+        font-size: 1rem;
+    }
+    #about .card-1, #contact form {
+        padding: 15px;
+    }
+}

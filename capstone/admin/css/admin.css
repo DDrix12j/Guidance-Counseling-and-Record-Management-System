@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: #495057;
+    color: #fff;
+  }
+  
+  .navbar-brand {
+    text-align: center;
+  }
+  
+  .flex-grow-1 {
+    margin-left: 250px; /* Adjust based on navbar width */
+    padding: 20px;
+  }
